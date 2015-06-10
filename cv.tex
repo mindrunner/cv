@@ -1,0 +1,255 @@
+\documentclass[11pt,a4paper,sans]{moderncv}
+
+% moderncv themes
+\moderncvtheme[grey]{casual}                 % optional argument are 'blue' (default), 'orange', 'red', 'green', 'grey' and 'roman' (for roman fonts, instead of sans serif fonts)
+%\moderncvtheme[green]{casual}                % idem
+
+% character encoding
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}                   % replace by the encoding you are using
+
+\usepackage{lmodern}
+%\renewcommand{\sfdefault}{\rmdefault}
+% adjust the page margins
+\usepackage[scale=0.75]{geometry}
+\usepackage{graphicx}
+%\setlength{\hintscolumnwidth}{3cm}						% if you want to change the width of the column with the dates
+%\AtBeginDocument{\setlength{\maketitlenamewidth}{6cm}}  % only for the classic theme, if you want to change the width of your name placeholder (to leave more space for your address details
+%\AtBeginDocument{\recomputelengths}                     % required when changes are made to page layout lengths
+
+%----------------------------------------------------------------------------------
+%            Kontaktdaten
+%----------------------------------------------------------------------------------
+% VORNAME
+\firstname{lukas}
+% NACHNAME
+\familyname{elsner}
+%TITEL (optional, ggf. einfach die Zeile löschen!)
+\title{curriculum vitae}
+%ADRESSE  (optional, ggf. einfach die Zeile löschen!)
+%\address{dorfstrasse 11}{25485 langeln}{germany}
+%HANDYNUMMER  (optional, ggf. einfach die Zeile löschen!)
+%\mobile{0176 20 21 52 67}
+%\mobile{(+49) 176 20 21 52 67}
+%EMAIL-ADRESSE  (optional, ggf. einfach die Zeile löschen!)
+\email{open@mindrunner.de - cv@lukaselsner.de}
+%HOMEPAGE  (optional, ggf. einfach die Zeile löschen!)
+\homepage{www.mindrunner.de - www.lukaselsner.de}
+%FOTO  (optional, ggf. einfach die Zeile löschen!)
+%  64pt = Höhe des Bildes, 'picture' = Name des Bildes
+\photo[128pt]{picturesmaller}
+
+% to show numerical labels in the bibliography; only useful if you make citations in your resume
+\makeatletter
+\renewcommand{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+\makeatother
+
+%----------------------------------------------------------------------------------
+%            Inhalt
+%----------------------------------------------------------------------------------
+
+\begin{document}
+\maketitle
+\section{}
+\cvline{born}{01.11.1984 in Henstedt-Ulzburg, Germany}
+
+\section{education}
+\cventry{2014--2015}{Master of Information Technology}{Queensland University of Technology}{Brisbane}{Australia}{
+  \begin{itemize}
+    \item GPA 7
+    \item Software Architecture (Advanced)
+  \end{itemize}
+}
+\cventry{2015}{Master Thesis}{\textbf{[Pyhton, C, Java, VHDL, git, \LaTeX]}}{QUT, Schatz Forensic}{}{
+  \begin{itemize}
+    \item In this project, a low level framework with the goal of reading raw
+    NAND flash devices found on SD-Cards and USB-drives was created. The
+    hardware/software co-design runs on a Pipistrello FPGA
+    board and enables dynamic pin assignment, high speed block
+    orientated I/O and (possibly voltage variation) to particular pins on the
+    hardware side, as well as a serial interface to an attached remote machine
+    for configuring the hardware and read data from the NAND flash on the
+    software side.
+  \end{itemize}
+}
+\cventry{2013--2014}{M.Sc. Information Technology}{University}{Lübeck}{Master of Science}{
+  \begin{itemize}
+    \item Software Systems Engineering
+  \end{itemize}
+}
+\cventry{2013}{Software Systems Engineering Laboratory}{\textbf{[Java, Maven, Jenkins, git, \LaTeX]}}{Uni Lübeck}{}{
+  \begin{itemize}
+    \item required course for every Software Systems Engineering student
+  \end{itemize}
+}
+\cventry{2009--2012}{B.Sc. Information Technology}{University}{Passau}{Bachelor of Science}{
+  \begin{itemize}
+    \item Graded 1.9
+    \item Minor: Business Administration
+  \end{itemize}
+}
+\cventry{2012}{Bachelor Thesis}{\textbf{[C++, \LaTeX]}}{Uni Passau}{\url{http://www.uni-passau.de}}{
+  \begin{itemize}
+    \item planning and implementing an easy-to-use class library on top of a proprietary SDK for prototyping perception platforms with the goal to automate testing within the whole research project (Graded: 1.3)
+  \end{itemize}
+}
+\cventry{2012}{Research Assistant}{\textbf{[C++]}}{Uni Passau}{}{
+  \begin{itemize}
+    \item developing and troubleshooting of plugins for a perception platform
+    \item developing of algorithms for automated image and pattern recognition
+  \end{itemize}
+}
+\cventry{2011}{Software Engineering Laboratory}{\textbf{[Java, Maven, Jenkins, git, \LaTeX]}}{Uni Passau}{}{
+  \begin{itemize}
+    \item Graded 1.0
+    \item required course for every Information Technology student
+    \item funCKit is an editor and simulator for digital circuits
+    \item the source is released under the GPL\\ (\url{https://github.com/mindrunner/funCKit})
+  \end{itemize}
+}
+\cventry{2005--2008}{Theoretical Vocational Training}{Vocational School}{Elmshorn}{IT specialist}{
+  \begin{itemize}
+    \item Software Developer
+  \end{itemize}
+}
+\cventry{2005--2008}{Practical Vocational Training}{TecBOS GmbH}{Halstenbek}{IT specialist}{
+  \begin{itemize}
+    \item Software Developer
+  \end{itemize}
+}
+\cventry{1995--2004}{High School}{Dietrich-Bonhoeffer-Gymnasium}{Quickborn}{}{}
+
+\section{work experience}
+\cventry{since 2004}{Software Engineer / IT-Consultant}{mindrunner}{}{}{
+  \begin{itemize}
+    \item conducting freelance work as a software engineer and consultant
+  \end{itemize}
+}
+\cventry{2010--2011}{Software Engineer}{freifalt GmbH}{Passau/Hamburg}{}{
+  \begin{itemize}
+    \item design and implementation of iOS-Apps and their backends
+    \item responsible for the company's internal infrastructure, a virtualized, heterogeneous network
+  \end{itemize}
+}
+\cventry{2005--2009}{Software Engineer}{MSA Auer GmbH}{Halstenbek/Berlin}{}{
+  \begin{itemize}
+    \item developing several core products of the company
+  \end{itemize}
+}
+
+\section{projects}
+\cventry{2015}{Android Application}{\textbf{[Java, Android, Gradle, git-flow, Jira]}}{}{}{
+  \begin{itemize}
+    \item development of an android app for a social network startup company
+    \item focus on cutting edge android technology
+    \item REST client / ContentProvider / SyncProvider / material design
+  \end{itemize}
+}
+\cventry{2014}{TouchIt}{\textbf{[Java, Android, Gradle, git, libGDX]}}{}{}{
+  \begin{itemize}
+    \item development of an android game based on libGDX
+    \item published in Google's play store
+    \item published the source code (GPLv3)
+    \item \url{https://github.com/mindrunner/touch-it}
+  \end{itemize}
+}
+\cventry{2013--2014}{brightup GmbH}{\textbf{[Java, C, .NET, OpenEmbedded, git-flow, Jira, Jenkins, BuildBot, Android, iOS]}}{}{http://www.brightup.de}{
+  \begin{itemize}
+    \item development of hardware and software for brightup’s central unit and z-wave plugs
+    \item maintenance of general development tools and work flows (bug tracker, version control system, continuous integration)
+    \item consulting for cloud, smartphone applications and general technical decisions
+  \end{itemize}
+}
+\cventry{2013}{PhotoBooth and Quickshot}{\textbf{[Java, Redmine, Jenkins, EDSDK (Canon)]}}{}{}{
+  \begin{itemize}
+    \item two kiosk machine applications for a photo studio
+  \end{itemize}
+}
+\cventry{2013}{hantPlayer}{\textbf{[Objective-C, Redmine, AppKit]}}{}{\url{http://www.hantmade.com}}{
+  \begin{itemize}
+    \item a native video player with special tagging functions
+  \end{itemize}
+}
+\cventry{2013}{Stomt}{\textbf{[Java, MongoDB, Spring, git-flow]}}{}{\url{http://www.stomt.com}}{
+  \begin{itemize}
+    \item consulting and the developing of backend and Android-App via pro bono
+  \end{itemize}
+}
+\cventry{2012}{HydrostopEU}{\textbf{[Joomla, PHP]}}{}{\url{http://www.hydrostopeu.com}}{
+  \begin{itemize}
+    \item complete webpage redesign
+  \end{itemize}
+}
+\cventry{2012}{Nordflair Ticketsystem}{\textbf{[Java, Maven, Jenkins, JPA]}}{}{\url{http://nordflair-events.de/}}{
+  \begin{itemize}
+    \item co-working on a web-based ticket and entry management system
+    \item developing the Java-Frontend entry terminal
+  \end{itemize}
+}
+\cventry{2012}{Templogger}{\textbf{[Java, Maven, Jenkins, JPA]}}{}{}{
+  \begin{itemize}
+    \item custom service which receives data from GSM-Datalogger: once received, it stores the information into a database and sends warning e-mails according to threshold values
+  \end{itemize}
+}
+\cventry{2010--2011}{usAR-Hamburg}{\textbf{[Java, Maven, Jenkins, JPA, iOS]}}{freifalt GmbH}{\url{http://www.freifalt.com}}{
+  \begin{itemize}
+    \item iOS-App which shows up public transportation based on augmented reality
+  \end{itemize}
+}
+\cventry{2005--2009}{TecBOS.replication}{\textbf{[Delphi]}}{TecBOS GmbH}{\url{http://tecbos.com}}{
+  \begin{itemize}
+    \item developing a set of windows services with the aim to automatically replicate multiple TecBOS-Databases
+  \end{itemize}
+}
+\cventry{2005--2009}{TecBOS.mobile}{\textbf{[C, Sqlite]}}{TecBOS GmbH}{\url{http://tecbos.com}}{
+  \begin{itemize}
+    \item Mobile Windows CE Devices can exchange data with the TecBOS.solutions
+  \end{itemize}
+}
+\cventry{2005--2009}{TecBOS.webaccess}{\textbf{[C\#, firebird]}}{TecBOS GmbH}{\url{http://tecbos.com}}{
+  \begin{itemize}
+    \item porting the native TecBOS.solutions into a web application
+  \end{itemize}
+}
+\cventry{2005--2009}{TecBOS.solutions}{\textbf{[Delphi, firebird]}}{TecBOS GmbH}{\url{http://tecbos.com}}{
+  \begin{itemize}
+    \item maintaining and developing parts of the application as part of my apprenticeship and subsequent employment
+  \end{itemize}
+}
+\cventry{2008}{CMS}{\textbf{[MySQL, PHP]}}{}{}{
+  \begin{itemize}
+    \item developing a whole content management system within one week
+  \end{itemize}
+}
+\cventry{2005--2008}{Web shop}{\textbf{[MySQL, PHP]}}{fontinform GmbH}{\url{http://www.fontinform.com}}{
+  \begin{itemize}
+    \item planning and development of a web shop for digital fonts
+  \end{itemize}
+}
+\section{tech skills}
+\includegraphics[width=0.7\textwidth]{skillcloud}
+%\cvline{Basic}{GTK, Perl, Python, VHDL}{}{}
+%\cvline{Advanced}{Android, Bash, C, C++, C\#, Delphi, iOS, Maven, MongoDB, MySQL, PHP}{}{}
+%\cvline{Expert}{Debian, Gentoo, Git, OpenEmbedded, Java, \LaTeX, Proxmox, Ubuntu, Yocto}{}{}
+%\cvline{Tools}{CMake, Eclipse, Intellij IDE, Make, Netbeans, Vim}{}{}
+%\cvline{Miscellaneous}{Office, OS X, Windows}{}{}
+
+\section{languages}
+\cvline{German}{Native}{}
+\cvline{English}{Fluent}{}
+\cvline{French}{Basic}{}
+
+\section{personal interests}
+\cvline{}{\begin{itemize}
+    \item climbing
+    \item bouldering
+    \item running
+    \item mountain biking
+    \item travelling
+\end{itemize}}
+~\\
+~\\
+~\\
+Langeln, \today\\ % Aktuelles Datum und Stadt
+\end{document}
+
