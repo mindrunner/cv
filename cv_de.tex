@@ -37,7 +37,7 @@
 \homepage{www.mindrunner.de}
 %FOTO  (optional, ggf. einfach die Zeile löschen!)
 %  64pt = Höhe des Bildes, 'picture' = Name des Bildes
-\photo[128pt]{picturesmall}
+\photo[128pt]{picturesmaller}
 
 % to show numerical labels in the bibliography; only useful if you make citations in your resume
 \makeatletter
@@ -54,10 +54,23 @@
 \cvline{geboren}{01.11.1984 in Henstedt-Ulzburg, Deutschland}
 
 \section{ausbildung}
-\cventry{since 2014}{Master of Information Technology}{Queensland University of Technology}{Brisbane}{Australien}{
+\cventry{2014--2015}{Master of Information Technology}{Queensland University of Technology}{Brisbane}{Australien}{
   \begin{itemize}
-    \item GPA 7
+    \item Note: 7 / (Entspricht 1,0)
     \item Software Architecture (Advanced)
+  \end{itemize}
+}
+\cventry{2015}{Master Arbeit}{\textbf{[Pyhton, C, Java, VHDL, git, \LaTeX]}}{QUT, Schatz Forensic}{}{
+  \begin{itemize}
+      \item In diesem Projekt wurde ein low level Framework erstellt, welches
+          das Ziel verfolgt Roh-Daten von NAND Speichern, die zum Beispiel
+          in SD-Karten und USB-Sticks zu finden sind, auszulesen. Das
+          Hardware/Software Co-Design läuft auf einem Pipistrello FPGA Board
+          und bietet dynamische Pin-Konfiguration, hohen Datendurchsatz und
+          Spannungsanpassung an bestimmten Pins auf der Hardwareseite, sowie
+          ein serielles Kommunikationsprotokoll für einen angeschlossenen PC um
+          die Hardware zu konfigurieren und Daten auszulesen auf der
+          Softwareseite.
   \end{itemize}
 }
 \cventry{2013--2014}{M.Sc. Informatik}{Universität}{Lübeck}{Master of Science}{
@@ -65,7 +78,8 @@
     \item Software Systems Engineering
   \end{itemize}
 }
-\cventry{2013}{Software Systems Engineering Praktikum}{\textbf{[Java, Maven, \LaTeX]}}{Uni Lübeck}{}{
+\cventry{2013}{Software Systems Engineering Praktikum}{\textbf{[Java, Maven,
+Jenkins, git \LaTeX]}}{Uni Lübeck}{}{
   \begin{itemize}
      \item Pflichtveranstaltung für jeden Software Systems Engineering Studenten
   \end{itemize}
@@ -87,7 +101,8 @@
     \item Umsetzung von Algorithmen für automatisierte Bild- und Mustererkennung
   \end{itemize}
 }
-\cventry{2011}{Software Engineering Praktikum}{\textbf{[Java, Maven, \LaTeX]}}{Uni Passau}{}{
+\cventry{2011}{Software Engineering Praktikum}{\textbf{[Java, Maven, Jenkins,
+git, \LaTeX]}}{Uni Passau}{}{
   \begin{itemize}
      \item Note 1,0
      \item Pflichtveranstaltung für jeden Informatikstudenten
@@ -127,24 +142,40 @@
 
 \section{projekte}
 
-\cventry{seit 2013}{brightup GmbH}{\textbf{[Java, C, .NET, OpenEmbedded, diverse Technologien]}}{}{http://www.brightup.de}{
+\cventry{2015}{Android Applikation}{\textbf{[Java, Android, Gradle, git-flow, Jira]}}{}{}{
+  \begin{itemize}
+      \item Entwicklung einer Android App für ein Soziales Netzwerk Startup
+      \item Fokussiert auf aktuelle Androit Technologie
+    \item REST client / ContentProvider / SyncProvider / Material Design
+  \end{itemize}
+}
+\cventry{2014}{TouchIt}{\textbf{[Java, Android, Gradle, git, libGDX]}}{}{}{
+  \begin{itemize}
+      \item Entwicklung eines Android Spiels auf Basis von libGDX
+      \item Veröffentlicht über den Google Play Store
+      \item Source Code veröffentlicht unter GPLv3
+    \item \url{https://github.com/mindrunner/touch-it}
+  \end{itemize}
+}
+\cventry{2013--2014}{brightup GmbH}{\textbf{[Java, C, .NET, OpenEmbedded,
+git-flow, Jira, Jenkins, BuildBot, Android, iOS]}}{}{http://www.brightup.de}{
   \begin{itemize}
     \item Entwicklung von Hard- und Software für brightups Zentraleinheit und z-wave Steckern
     \item Wartung der Entwicklungstools und Workflows (Bugtracker, Versionsverwaltung, Continuous Integration)
     \item beratende Tätigkeit für Cloud, Smartphone Apps und allgemeinen technischen Entscheidungen
   \end{itemize}
 }
-\cventry{2013}{PhotoBooth and Quickshot}{\textbf{[Java, EDSDK (Canon)]}}{}{}{
+\cventry{2013}{PhotoBooth and Quickshot}{\textbf{[Java, Redmine, Jenkins, EDSDK (Canon)]}}{}{}{
   \begin{itemize}
     \item zwei Kiosk-Automat Applikationen für ein Fotostudio
   \end{itemize}
 }
-\cventry{2013}{hantPlayer}{\textbf{[Objective-C, AppKit]}}{}{\url{http://www.hantmade.com}}{
+\cventry{2013}{hantPlayer}{\textbf{[Objective-C, Remdine, AppKit]}}{}{\url{http://www.hantmade.com}}{
   \begin{itemize}
     \item ein nativer Videoplayer mit speziellen tagging Funktionen
   \end{itemize}
 }
-\cventry{2013}{Stomt}{\textbf{[Java, MongoDB, Spring]}}{}{\url{http://www.stomt.com}}{
+\cventry{2013}{Stomt}{\textbf{[Java, MongoDB, Spring, git-flow]}}{}{\url{http://www.stomt.com}}{
   \begin{itemize}
     \item unentgeltliche Arbeit als Berater und Entwickler des Backends und der Android-App
   \end{itemize}
@@ -154,18 +185,18 @@
     \item komplette Überarbeitung der Webseite
   \end{itemize}
 }
-\cventry{2012}{Nordflair Ticketsystem}{\textbf{[Java, JPA]}}{}{\url{http://nordflair-events.de/}}{
+\cventry{2012}{Nordflair Ticketsystem}{\textbf{[Java, Maven, Jenkins, JPA]}}{}{\url{http://nordflair-events.de/}}{
   \begin{itemize}
     \item Mitentwicklung am Web basiertem Ticket- und Eintrittsmanagementsystem
     \item Entwicklung vom Java-Frontend für das Einlassterminal
   \end{itemize}
 }
-\cventry{2012}{Templogger}{\textbf{[Java, JPA]}}{}{}{
+\cventry{2012}{Templogger}{\textbf{[Java, Maven, Jenkins, JPA]}}{}{}{
   \begin{itemize}
     \item Entwicklung eines Linux Dienstes, der Daten von GSM-Datenloggern entgegen nimmt, in einer Datenbank speichert und bei Überschreiten von Grenzwerten Warn-Emails versendet
   \end{itemize}
 }
-\cventry{2010--2011}{usAR-Hamburg}{\textbf{[Java, JPA, iOS]}}{freifalt GmbH}{\url{http://www.freifalt.com}}{
+\cventry{2010--2011}{usAR-Hamburg}{\textbf{[Java, Maven, Jenkins, JPA, iOS]}}{freifalt GmbH}{\url{http://www.freifalt.com}}{
   \begin{itemize}
     \item iOS-App, die auf Basis von Augmented Reality öffentliche Transitmöglichkeiten anzeigt
   \end{itemize}
